@@ -74,11 +74,21 @@ select {
 	font-family: "Poppins", Arial, Helvetica, sans-serif;
 	background-color: var(--primary-300);
 	border: none;
-	border-radius: 0.5rem;
+	border-radius: 5px;
 	padding: 0.5rem;
 	color: var(--primary-900);
 	font-weight: 600;
 	text-transform: uppercase;
+	cursor: text;
+}
+
+select {
+	cursor: pointer;
+}
+
+input:focus {
+	outline: 1px solid var(--primary-300);
+	outline-offset: 2px;
 }
 
 #title {
@@ -103,6 +113,12 @@ button {
 	border: none;
 	padding: 0.5rem;
 	border-radius: 0.5rem;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: var(--secondary);
+	color: var(--primary-600);
 }
 
 .divider {
