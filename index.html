@@ -5,6 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="/main.css" />
+		<script src="index.js"></script>
 		<title>Library</title>
 	</head>
 	<body>
@@ -28,12 +29,32 @@
 				<option value="want-to-read">Want to Read</option>
 				<option value="read">Read</option>
 			</select>
-			<button>Add</button>
+			<button onclick="addBook()">Add</button>
 		</div>
 		<div class="library">
 			<h2>Current Books</h2>
 			<div class="divider"></div>
 			<p class="no-books">No books at this time. Add a book above.</p>
+			<div class="cards">
+				<div class="card">
+					<h4>Percy Jackson: The Lightning Thief</h4>
+					<h4>Rick Riordan</h4>
+					<button>Read</button>
+				</div>
+				<div class="divider"></div>
+				<div class="card">
+					<h4>The Subtle Art of not Giving a F*ck</h4>
+					<h4>Author</h4>
+					<button>Want to Read</button>
+				</div>
+				<div class="divider"></div>
+				<div class="card">
+					<h4>The 4-Hour Work Week</h4>
+					<h4>Tim Ferris</h4>
+					<button>Read</button>
+				</div>
+				<div class="divider"></div>
+			</div>
 		</div>
 
 		<footer>
