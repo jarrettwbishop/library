@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/main.css" />
+		<title>Library</title>
+	</head>
+	<body>
+		<header>
+			<h1>Personal Library</h1>
+			<p>
+				An Odin Project assignment implementing
+				<em>Object Constructors</em>
+			</p>
+		</header>
+
+		<div class="add-book">
+			<h2>Add New Book</h2>
+			<div class="divider"></div>
+			<label for="title">Title</label>
+			<label for="author">Author</label>
+			<label for="status">Status</label>
+			<input name="title" id="title" type="text" placeholder="Title" />
+			<input name="author" id="author" type="text" placeholder="Author" />
+			<select name="status" id="status">
+				<option value="want-to-read">Want to Read</option>
+				<option value="read">Read</option>
+			</select>
+			<button>Add</button>
+		</div>
+		<div class="library">
+			<h2>Current Books</h2>
+			<div class="divider"></div>
+			<p class="no-books">No books at this time. Add a book above.</p>
+		</div>
+
+		<footer>
+			<p>Created by <strong>Jarrett Bishop</strong></p>
+		</footer>
+	</body>
+</html>

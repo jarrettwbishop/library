@@ -1,0 +1,145 @@
+html,
+body {
+	height: 100%;
+	overflow: hidden;
+}
+
+:root {
+	--primary-900: #352f44;
+	--primary-600: #5c5470;
+	--primary-300: #b9b4c7;
+	--secondary: #faf0e6;
+}
+
+body {
+	background-color: var(--primary-900);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 5rem;
+	font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+header {
+	padding: 3rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: var(--primary-300);
+	text-transform: uppercase;
+}
+
+header h1 {
+	font-weight: 700;
+	font-size: 3rem;
+}
+
+header p {
+	font-weight: 700;
+	color: var(--primary-600);
+}
+
+header em {
+	font-weight: 300;
+	color: var(--secondary);
+}
+
+.add-book {
+	display: grid;
+	grid-template-columns: 3fr 3fr 1fr auto;
+	grid-template-rows: 1fr auto 1fr;
+	gap: 5px 30px;
+	width: 60%;
+}
+
+.add-book h2 {
+	grid-column: span 4;
+	color: var(--primary-300);
+	text-transform: uppercase;
+	font-weight: 800;
+}
+
+label {
+	align-self: end;
+	color: var(--secondary);
+}
+
+input,
+select {
+	font-family: "Poppins", Arial, Helvetica, sans-serif;
+	background-color: var(--primary-300);
+	border: none;
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+	color: var(--primary-900);
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+#title {
+	grid-row: 4 / 5;
+}
+
+#author {
+	grid-row: 4 / 5;
+}
+
+#status {
+	grid-row: 4 / 5;
+}
+
+button {
+	grid-row: 4 / 5;
+	color: var(--secondary);
+	font-family: "Poppins", Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	background-color: var(--primary-600);
+	border: none;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+}
+
+.divider {
+	grid-column: span 4;
+	border-bottom: 1px solid var(--primary-600);
+}
+
+.library {
+	width: 60%;
+}
+
+.library h2 {
+	grid-column: span 4;
+	color: var(--primary-300);
+	text-transform: uppercase;
+	font-weight: 800;
+}
+
+.no-books {
+	display: flex;
+	justify-content: center;
+	align-items: end;
+	margin-top: 6rem;
+	color: var(--primary-300);
+}
+footer {
+	margin-top: auto;
+	padding: 1rem;
+	background-color: var(--primary-600);
+	color: var(--primary-300);
+	width: 100vw;
+	text-align: center;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+footer strong {
+	color: var(--primary-300);
+	font-weight: 700;
+}
