@@ -103,7 +103,7 @@ input:focus {
 	grid-row: 4 / 5;
 }
 
-button {
+.add-book button {
 	grid-row: 4 / 5;
 	color: var(--secondary);
 	font-family: "Poppins", Arial, Helvetica, sans-serif;
@@ -116,7 +116,7 @@ button {
 	cursor: pointer;
 }
 
-button:hover {
+.add-book button:hover {
 	background-color: var(--secondary);
 	color: var(--primary-600);
 }
@@ -143,6 +143,39 @@ button:hover {
 	align-items: end;
 	margin-top: 6rem;
 	color: var(--primary-300);
+	display: none;
+}
+.cards {
+	display: flex;
+	flex-direction: column;
+}
+.card {
+	display: grid;
+	grid-template-columns: 2fr 2fr 1fr;
+	gap: 1rem;
+	margin: 1rem 0;
+	align-items: center;
+}
+
+.card h4 {
+	color: var(--primary-300);
+}
+
+.card button {
+	color: var(--secondary);
+	font-family: "Poppins", Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	background-color: var(--primary-600);
+	border: none;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+	cursor: pointer;
+}
+
+.card button:hover {
+	background-color: var(--secondary);
+	color: var(--primary-600);
 }
 footer {
 	margin-top: auto;
